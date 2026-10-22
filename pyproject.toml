@@ -1,0 +1,9 @@
+[project]
+name = "intelligence-system"
+version = "1.0.0"
+description = "Sistema de IA de grado de producción: RAG híbrido + orquestador multi-agente + API async + trazabilidad"
+requires-python = ">=3.12"
+dynamic = ["dependencies"]
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }

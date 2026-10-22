@@ -1,0 +1,475 @@
+[
+  {
+    "id": 1,
+    "nombre": "Pregunta documental (RAG)",
+    "query": "Según la documentación, ¿qué porcentaje mínimo de cobertura de tests se exige antes de mergear un pull request?",
+    "espera": "Responde con el dato de 03_testing.md y lo cita en fuentes. No interviene el analista.",
+    "job_id": "e58a4794-5aac-45b0-b642-8089aa897f30",
+    "estado": "DONE",
+    "duracion_s": 27.3,
+    "pausa": null,
+    "trabajo": {
+      "job_id": "e58a4794-5aac-45b0-b642-8089aa897f30",
+      "status": "DONE",
+      "query": "Según la documentación, ¿qué porcentaje mínimo de cobertura de tests se exige antes de mergear un pull request?",
+      "requiere_aprobacion": false,
+      "created_at": "2026-10-22T03:55:20.440924+00:00",
+      "updated_at": "2026-10-22T03:55:47.285407+00:00",
+      "started_at": "2026-10-22T03:55:20.442811+00:00",
+      "finished_at": "2026-10-22T03:55:47.285373+00:00",
+      "duracion_s": 26.844,
+      "result": {
+        "respuesta": "Según la documentación, se exige una cobertura mínima del 80% en cada módulo antes de poder mergear un pull request a la rama principal, verificada automáticamente por el pipeline de CI.\n\n---\n**Datos verificados (calculados por las herramientas, no por el LLM):**\n- Documentación consultada (lo más relevante que encontró el RAG): 03_testing.md",
+        "contribuciones": {
+          "investigador": "La respuesta a la pregunta es que se exige una cobertura mínima del 80% en cada módulo antes de poder mergear un pull request a la rama principal, verificada automáticamente por el pipeline de CI."
+        },
+        "fuentes": [
+          "03_testing.md"
+        ],
+        "datos_verificados": {
+          "temas_de_comentarios": [],
+          "cantidad_comentarios": 0,
+          "busquedas_en_documentos": [
+            "cobertura de tests minimum para mergear pull request"
+          ],
+          "sentimiento": null,
+          "estadisticas": null
+        },
+        "pasos_supervisor": 2,
+        "traza": [
+          {
+            "agente": "usuario",
+            "contenido": "Según la documentación, ¿qué porcentaje mínimo de cobertura de tests se exige antes de mergear un pull request?"
+          },
+          {
+            "agente": "supervisor",
+            "contenido": "Delego en 'investigador'. Motivo: sin detalle"
+          },
+          {
+            "agente": "investigador",
+            "contenido": "La respuesta a la pregunta es que se exige una cobertura mínima del 80% en cada módulo antes de poder mergear un pull request a la rama principal, verificada automáticamente por el pipeline de CI."
+          },
+          {
+            "agente": "supervisor",
+            "contenido": "Según la documentación, se exige una cobertura mínima del 80% en cada módulo antes de poder mergear un pull request a la rama principal, verificada automáticamente por el pipeline de CI.\n\n---\n**Datos verificados (calculados por las herramientas, no por el LLM):**\n- Documentación consultada (lo más relevante que encontró el RAG): 03_testing.md"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 2,
+    "nombre": "Pregunta trampa (no está en los documentos)",
+    "query": "Según la documentación, ¿cuál es el presupuesto anual asignado al equipo de infraestructura?",
+    "espera": "Admite que esa información no está en la documentación; no inventa una cifra.",
+    "job_id": "461af7ba-dcd1-4457-96fc-0ed6f5b4afc2",
+    "estado": "DONE",
+    "duracion_s": 18.1,
+    "pausa": null,
+    "trabajo": {
+      "job_id": "461af7ba-dcd1-4457-96fc-0ed6f5b4afc2",
+      "status": "DONE",
+      "query": "Según la documentación, ¿cuál es el presupuesto anual asignado al equipo de infraestructura?",
+      "requiere_aprobacion": false,
+      "created_at": "2026-10-22T03:55:47.715558+00:00",
+      "updated_at": "2026-10-22T03:56:05.662977+00:00",
+      "started_at": "2026-10-22T03:55:47.717333+00:00",
+      "finished_at": "2026-10-22T03:56:05.662942+00:00",
+      "duracion_s": 17.946,
+      "result": {
+        "respuesta": "La documentación no proporciona información sobre el presupuesto anual asignado al equipo de infraestructura. Según [04_deployment.md], solo se menciona la estrategia de despliegue y la utilización de herramientas como Docker, Helm charts, Kubernetes, despliegues blue-green y Grafana, pero no se menciona el presupuesto asignado.\n\n---\n**Datos verificados (calculados por las herramientas, no por el LLM):**\n- Documentación consultada (lo más relevante que encontró el RAG): 04_deployment.md",
+        "contribuciones": {
+          "investigador": "La información sobre el presupuesto anual asignado al equipo de infraestructura no se encuentra en la documentación técnica de la empresa."
+        },
+        "fuentes": [
+          "04_deployment.md"
+        ],
+        "datos_verificados": {
+          "temas_de_comentarios": [],
+          "cantidad_comentarios": 0,
+          "busquedas_en_documentos": [
+            "presupuesto anual equipo de infraestructura"
+          ],
+          "sentimiento": null,
+          "estadisticas": null
+        },
+        "pasos_supervisor": 2,
+        "traza": [
+          {
+            "agente": "usuario",
+            "contenido": "Según la documentación, ¿cuál es el presupuesto anual asignado al equipo de infraestructura?"
+          },
+          {
+            "agente": "supervisor",
+            "contenido": "Delego en 'investigador'. Motivo: sin detalle"
+          },
+          {
+            "agente": "investigador",
+            "contenido": "La información sobre el presupuesto anual asignado al equipo de infraestructura no se encuentra en la documentación técnica de la empresa."
+          },
+          {
+            "agente": "supervisor",
+            "contenido": "La documentación no proporciona información sobre el presupuesto anual asignado al equipo de infraestructura. Según [04_deployment.md], solo se menciona la estrategia de despliegue y la utilización de herramientas como Docker, Helm charts, Kubernetes, despliegues blue-green y Grafana, pero no se menciona el presupuesto asignado.\n\n---\n**Datos verificados (calculados por las herramientas, no por el LLM):**\n- Documentación consultada (lo más relevante que encontró el RAG): 04_deployment.md"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 3,
+    "nombre": "Feedback de usuarios + análisis",
+    "query": "Buscá los comentarios de los usuarios sobre el checkout, analizá el sentimiento general y calculá el rating promedio.",
+    "espera": "Delegación investigador -> analista; sentimiento y promedio (3.2) calculados con herramientas.",
+    "job_id": "1abdeeef-0c15-4321-aa3e-6acc0403373d",
+    "estado": "DONE",
+    "duracion_s": 45.2,
+    "pausa": null,
+    "trabajo": {
+      "job_id": "1abdeeef-0c15-4321-aa3e-6acc0403373d",
+      "status": "DONE",
+      "query": "Buscá los comentarios de los usuarios sobre el checkout, analizá el sentimiento general y calculá el rating promedio.",
+      "requiere_aprobacion": false,
+      "created_at": "2026-10-22T03:56:05.831744+00:00",
+      "updated_at": "2026-10-22T03:56:50.082366+00:00",
+      "started_at": "2026-10-22T03:56:05.833409+00:00",
+      "finished_at": "2026-10-22T03:56:50.082339+00:00",
+      "duracion_s": 44.252,
+      "result": {
+        "respuesta": "Evidencia de los comentarios de los usuarios sobre el checkout:\n\n* \"El nuevo checkout es mucho más rápido, me encantó la experiencia.\" - 5/5\n* \"Tarda demasiado en cargar el paso de pago, es frustrante.\" - 2/5\n* \"Buena experiencia en general, aunque el botón de confirmar es confuso.\" - 3/5\n* \"Excelente, el proceso de compra quedó buenísimo, lo recomiendo.\" - 5/5\n* \"Tuve un error al confirmar la compra, muy mala experiencia.\" - 1/5\n\n---\n**Datos verificados (calculados por las herramientas, no por el LLM):**\n- Rating promedio: 3.2 (5 comentarios; mín. 1.0, máx. 5.0)\n- Sentimiento: mixto (2 positivos, 2 negativos, 1 neutros)",
+        "contribuciones": {
+          "investigador": "**Comentarios de los usuarios sobre el checkout:**\n\n* \"El nuevo checkout es mucho más rápido, me encantó la experiencia.\" - 5/5\n* \"Tarda demasiado en cargar el paso de pago, es frustrante.\" - 2/5\n* \"Buena experiencia en general, aunque el botón de confirmar es confuso.\" - 3/5\n* \"Excelente, el proceso de compra quedó buenísimo, lo recomiendo.\" - 5/5\n* \"Tuve un error al confirmar la compra, muy mala experiencia.\" - 1/5\n\n**Análisis del sentimiento general:**\n\nEl sentimiento general de los comentarios es mixto, con algunos usuarios expresando una experiencia positiva y otros expresando frustración o error.\n\n**Calcular el rating promedio:**\n\nEl rating promedio de los comentarios es de 3,2/5.",
+          "analista": "Buenos días, gracias por proporcionar los comentarios y las calificaciones. Después de analizar los comentarios, puedo decir que hay un sentimiento mixto. Por un lado, hay comentarios positivos como \"El nuevo checkout es mucho más rápido, me encantó la experiencia.\" y \"Excelente, el proceso de compra quedó buenísimo, lo recomiendo.\" que indican una experiencia generalmente positiva.\n\nPor otro lado, también hay comentarios negativos como \"Tarda demasiado en cargar el paso de pago, es frustrante.\" y \"Tuve un error al confirmar la compra, muy mala experiencia.\" que indican una experiencia generalmente negativa.\n\nEn cuanto al promedio de las calificaciones, puedo decir que es de 3.2, lo que indica una experiencia generalmente positiva pero con algunos aspectos que necesitan mejorar.\n\nEn resumen, la experiencia de compra es mixta, con algunos aspectos positivos y otros negativos. Es importante que se tomen medidas para mejorar los aspectos negativos y mantener los positivos.\n\n¿Hay algo más en lo que pueda ayudarte?"
+        },
+        "fuentes": [],
+        "datos_verificados": {
+          "temas_de_comentarios": [
+            "checkout"
+          ],
+          "cantidad_comentarios": 5,
+          "busquedas_en_documentos": [
+            "análisis del sentimiento general del checkout"
+          ],
+          "sentimiento": {
+            "positivos": 2,
+            "negativos": 2,
+            "neutros": 1,
+            "sentimiento_general": "mixto"
+          },
+          "estadisticas": {
+            "promedio": 3.2,
+            "minimo": 1.0,
+            "maximo": 5.0,
+            "cantidad": 5
+          }
+        },
+        "pasos_supervisor": 3,
+        "traza": [
+          {
+            "agente": "usuario",
+            "contenido": "Buscá los comentarios de los usuarios sobre el checkout, analizá el sentimiento general y calculá el rating promedio."
+          },
+          {
+            "agente": "supervisor",
+            "contenido": "Delego en 'investigador'. Motivo: Corregido por la rúbrica: primero debe actuar 'investigador' (el LLM había elegido 'analista')."
+          },
+          {
+            "agente": "investigador",
+            "contenido": "**Comentarios de los usuarios sobre el checkout:**\n\n* \"El nuevo checkout es mucho más rápido, me encantó la experiencia.\" - 5/5\n* \"Tarda demasiado en cargar el paso de pago, es frustrante.\" - 2/5\n* \"Buena experiencia en general, aunque el botón de confirmar es confuso.\" - 3/5\n* \"Excelente, el proceso de compra quedó buenísimo, lo recomiendo.\" - 5/5\n* \"Tuve un error al confirmar la compra, muy mala experiencia.\" - 1/5\n\n**Análisis del sentimiento general:**\n\nEl sentimiento general de los comentarios es mixto, con algunos usuarios expresando una experiencia positiva y otros expresando frustración o error.\n\n**Calcular el rating promedio:**\n\nEl rating promedio de los comentarios es de 3,2/5."
+          },
+          {
+            "agente": "supervisor",
+            "contenido": "Delego en 'analista'. Motivo: sin detalle"
+          },
+          {
+            "agente": "analista",
+            "contenido": "Buenos días, gracias por proporcionar los comentarios y las calificaciones. Después de analizar los comentarios, puedo decir que hay un sentimiento mixto. Por un lado, hay comentarios positivos como \"El nuevo checkout es mucho más rápido, me encantó la experiencia.\" y \"Excelente, el proceso de compra quedó buenísimo, lo recomiendo.\" que indican una experiencia generalmente positiva.\n\nPor otro lado, también hay comentarios negativos como \"Tarda demasiado en cargar el paso de pago, es frustrante.\" y \"Tuve un error al confirmar la compra, muy mala experiencia.\" que indican una experiencia generalmente negativa.\n\nEn cuanto al promedio de las calificaciones, puedo decir que es de 3.2, lo que indica una experiencia generalmente positiva pero con algunos aspectos que necesitan mejorar.\n\nEn resumen, la experiencia de compra es mixta, con algunos aspectos positivos y otros negativos. Es importante que se tomen medidas para mejorar los aspectos negativos y mantener los positivos.\n\n¿Hay algo más en lo que pueda ayudarte?"
+          },
+          {
+            "agente": "supervisor",
+            "contenido": "Evidencia de los comentarios de los usuarios sobre el checkout:\n\n* \"El nuevo checkout es mucho más rápido, me encantó la experiencia.\" - 5/5\n* \"Tarda demasiado en cargar el paso de pago, es frustrante.\" - 2/5\n* \"Buena experiencia en general, aunque el botón de confirmar es confuso.\" - 3/5\n* \"Excelente, el proceso de compra quedó buenísimo, lo recomiendo.\" - 5/5\n* \"Tuve un error al confirmar la compra, muy mala experiencia.\" - 1/5\n\n---\n**Datos verificados (calculados por las herramientas, no por el LLM):**\n- Rating promedio: 3.2 (5 comentarios; mín. 1.0, máx. 5.0)\n- Sentimiento: mixto (2 positivos, 2 negativos, 1 neutros)"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 4,
+    "nombre": "Cruce documentación + feedback",
+    "query": "Según la documentación, ¿qué estrategia de despliegue se usa para los servicios críticos? Además, buscá los comentarios sobre el checkout, analizá el sentimiento y calculá el rating promedio.",
+    "espera": "Usa el RAG y la base de comentarios, y el analista procesa los comentarios.",
+    "job_id": "cdb3f94f-93fc-4e7c-979b-b2dcd6f29793",
+    "estado": "DONE",
+    "duracion_s": 63.3,
+    "pausa": null,
+    "trabajo": {
+      "job_id": "cdb3f94f-93fc-4e7c-979b-b2dcd6f29793",
+      "status": "DONE",
+      "query": "Según la documentación, ¿qué estrategia de despliegue se usa para los servicios críticos? Además, buscá los comentarios sobre el checkout, analizá el sentimiento y calculá el rating promedio.",
+      "requiere_aprobacion": false,
+      "created_at": "2026-10-22T03:56:51.025063+00:00",
+      "updated_at": "2026-10-22T03:57:53.830235+00:00",
+      "started_at": "2026-10-22T03:56:51.027167+00:00",
+      "finished_at": "2026-10-22T03:57:53.830211+00:00",
+      "duracion_s": 62.806,
+      "result": {
+        "respuesta": "Según la documentación, la estrategia de despliegue para los servicios críticos es el uso de despliegues \"blue-green\". Este enfoque consiste en levantar una nueva versión del servicio en paralelo a la versión existente, y luego verificar la salud del nuevo servicio mediante health checks automáticos. Solo cuando el nuevo servicio esté saludable, se redirige el tráfico hacia él. Esto permite un rollback inmediato ante cualquier anomalía, simplemente revirtiendo el enrutamiento.\n\nEn cuanto al checkout, los comentarios de los usuarios varían en su experiencia. Algunos mencionan que el proceso es rápido y fácil, mientras que otros mencionan problemas con la carga del paso de pago o con la experiencia en general. Sin embargo, la mayoría de los comentarios son positivos y mencionan que el proceso de compra es rápido y eficiente.\n\nSentimiento general: El sentimiento general de los comentarios es mixto, con una mayoría de comentarios positivos y algunos negativos. Los comentarios positivos destacan la rapidez y facilidad del proceso de checkout, mientras que los comentarios negativos mencionan problemas con la carga del paso de pago o con la experiencia en general.\n\n---\n**Datos verificados (calculados por las herramientas, no por el LLM):**\n- Rating promedio: 3.2 (5 comentarios; mín. 1.0, máx. 5.0)\n- Sentimiento: mixto (2 positivos, 2 negativos, 1 neutros)\n- Documentación consultada (lo más relevante que encontró el RAG): 04_deployment.md",
+        "contribuciones": {
+          "investigador": "La estrategia de despliegue para los servicios críticos en la empresa se basa en el uso de despliegues \"blue-green\" para garantizar la disponibilidad y la seguridad del servicio. Los servicios se empaquetan como imágenes Docker y se despliegan mediante Helm charts sobre Kubernetes. La estrategia de release utiliza despliegues \"blue-green\" para los servicios críticos, lo que permite un rollback inmediato ante cualquier anomalía.\n\nEn cuanto al checkout, los comentarios de los usuarios varían en su experiencia. Algunos mencionan que el proceso es rápido y fácil, mientras que otros mencionan problemas con la carga del paso de pago o con la experiencia en general. Sin embargo, la mayoría de los comentarios son positivos y mencionan que el proceso de compra es rápido y eficiente.",
+          "analista": "Buenos días, gracias por proporcionar los comentarios y las calificaciones de los usuarios en cuanto al checkout. Después de analizar los comentarios, puedo decir que hay un sentimiento mixto hacia el proceso de checkout. Por un lado, algunos usuarios han tenido una experiencia muy positiva, destacando la rapidez y la facilidad del proceso. Por otro lado, también hay comentarios negativos que mencionan frustración y errores en el proceso de pago.\n\nEn cuanto al promedio de las calificaciones, puedo decir que es de 3.2, lo que indica una experiencia generalmente positiva, pero con algunas áreas de mejora. El mínimo y el máximo son 1.0 y 5.0, respectivamente, lo que sugiere que hay una amplia gama de opiniones sobre el proceso de checkout.\n\nEn resumen, aunque hay algunas áreas de mejora, la mayoría de los usuarios han tenido una experiencia positiva con el checkout, lo que sugiere que es un proceso eficiente y fácil de usar. Sin embargo, es importante considerar las comentarios negativos y trabajar en mejorar el proceso para satisfacer las necesidades de todos los usuarios."
+        },
+        "fuentes": [
+          "04_deployment.md"
+        ],
+        "datos_verificados": {
+          "temas_de_comentarios": [
+            "checkout"
+          ],
+          "cantidad_comentarios": 5,
+          "busquedas_en_documentos": [
+            "despliegue de servicios críticos",
+            "checkout"
+          ],
+          "sentimiento": {
+            "positivos": 2,
+            "negativos": 2,
+            "neutros": 1,
+            "sentimiento_general": "mixto"
+          },
+          "estadisticas": {
+            "promedio": 3.2,
+            "minimo": 1.0,
+            "maximo": 5.0,
+            "cantidad": 5
+          }
+        },
+        "pasos_supervisor": 3,
+        "traza": [
+          {
+            "agente": "usuario",
+            "contenido": "Según la documentación, ¿qué estrategia de despliegue se usa para los servicios críticos? Además, buscá los comentarios sobre el checkout, analizá el sentimiento y calculá el rating promedio."
+          },
+          {
+            "agente": "supervisor",
+            "contenido": "Delego en 'investigador'. Motivo: sin detalle"
+          },
+          {
+            "agente": "investigador",
+            "contenido": "La estrategia de despliegue para los servicios críticos en la empresa se basa en el uso de despliegues \"blue-green\" para garantizar la disponibilidad y la seguridad del servicio. Los servicios se empaquetan como imágenes Docker y se despliegan mediante Helm charts sobre Kubernetes. La estrategia de release utiliza despliegues \"blue-green\" para los servicios críticos, lo que permite un rollback inmediato ante cualquier anomalía.\n\nEn cuanto al checkout, los comentarios de los usuarios varían en su experiencia. Algunos mencionan que el proceso es rápido y fácil, mientras que otros mencionan problemas con la carga del paso de pago o con la experiencia en general. Sin embargo, la mayoría de los comentarios son positivos y mencionan que el proceso de compra es rápido y eficiente."
+          },
+          {
+            "agente": "supervisor",
+            "contenido": "Delego en 'analista'. Motivo: sin detalle"
+          },
+          {
+            "agente": "analista",
+            "contenido": "Buenos días, gracias por proporcionar los comentarios y las calificaciones de los usuarios en cuanto al checkout. Después de analizar los comentarios, puedo decir que hay un sentimiento mixto hacia el proceso de checkout. Por un lado, algunos usuarios han tenido una experiencia muy positiva, destacando la rapidez y la facilidad del proceso. Por otro lado, también hay comentarios negativos que mencionan frustración y errores en el proceso de pago.\n\nEn cuanto al promedio de las calificaciones, puedo decir que es de 3.2, lo que indica una experiencia generalmente positiva, pero con algunas áreas de mejora. El mínimo y el máximo son 1.0 y 5.0, respectivamente, lo que sugiere que hay una amplia gama de opiniones sobre el proceso de checkout.\n\nEn resumen, aunque hay algunas áreas de mejora, la mayoría de los usuarios han tenido una experiencia positiva con el checkout, lo que sugiere que es un proceso eficiente y fácil de usar. Sin embargo, es importante considerar las comentarios negativos y trabajar en mejorar el proceso para satisfacer las necesidades de todos los usuarios."
+          },
+          {
+            "agente": "supervisor",
+            "contenido": "Según la documentación, la estrategia de despliegue para los servicios críticos es el uso de despliegues \"blue-green\". Este enfoque consiste en levantar una nueva versión del servicio en paralelo a la versión existente, y luego verificar la salud del nuevo servicio mediante health checks automáticos. Solo cuando el nuevo servicio esté saludable, se redirige el tráfico hacia él. Esto permite un rollback inmediato ante cualquier anomalía, simplemente revirtiendo el enrutamiento.\n\nEn cuanto al checkout, los comentarios de los usuarios varían en su experiencia. Algunos mencionan que el proceso es rápido y fácil, mientras que otros mencionan problemas con la carga del paso de pago o con la experiencia en general. Sin embargo, la mayoría de los comentarios son positivos y mencionan que el proceso de compra es rápido y eficiente.\n\nSentimiento general: El sentimiento general de los comentarios es mixto, con una mayoría de comentarios positivos y algunos negativos. Los comentarios positivos destacan la rapidez y facilidad del proceso de checkout, mientras que los comentarios negativos mencionan problemas con la carga del paso de pago o con la experiencia en general.\n\n---\n**Datos verificados (calculados por las herramientas, no por el LLM):**\n- Rating promedio: 3.2 (5 comentarios; mín. 1.0, máx. 5.0)\n- Sentimiento: mixto (2 positivos, 2 negativos, 1 neutros)\n- Documentación consultada (lo más relevante que encontró el RAG): 04_deployment.md"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 5,
+    "nombre": "Tarea crítica aprobada (HITL)",
+    "query": "Buscá los comentarios sobre el checkout, analizá el sentimiento, calculá el rating promedio y publicá el reporte en el canal del equipo.",
+    "espera": "Se pausa en WAITING_APPROVAL; tras la aprobación humana, se publica.",
+    "decision": {
+      "aprobado": true,
+      "comentario": "Reporte revisado, OK para publicar."
+    },
+    "job_id": "2c12b789-4f17-49ab-9ae6-2ac32fe479b8",
+    "estado": "DONE",
+    "duracion_s": 19.2,
+    "pausa": {
+      "accion": "publicar_reporte",
+      "canal": "#reportes-producto",
+      "motivo": "Publicar el reporte tiene efectos secundarios: requiere aprobación humana.",
+      "reporte": "**Reporte de Checkout**\n\n**Comentarios sobre el checkout:**\n\n* Algunos usuarios han tenido una experiencia positiva con el checkout, destacando su velocidad y facilidad de uso. Por ejemplo, un investigador mencionó que el nuevo checkout es \"muy rápido\" y que le encantó la experiencia.\n* Sin embargo, otros usuarios han expresado frustración con el proceso de pago, mencionando que tarda demasiado en cargar. Un usuario también mencionó que el botón de confirmar es \"confuso\".\n\n**Conclusión:** El checkout parece ser un aspecto crítico del proceso de compra, y es importante abordar las preocupaciones de los usuarios para mejorar la experiencia general. Se recomienda investigar y mejorar el proceso de pago para reducir los tiempos de carga y hacer que el botón de confirmar sea más intuitivo.\n\n**Recomendaciones:**\n\n* Investigar y mejorar el proceso de pago para reducir los tiempos de carga.\n* Mejorar el botón de confirmar para hacerlo más intuitivo y fácil de usar.\n\n---\n**Datos verificados (calculados por las herramientas, no por el LLM):**\n- Rating promedio: 3.2 (5 comentarios; mín. 1.0, máx. 5.0)\n- Sentimiento: mixto (2 positivos, 2 negativos, 1 neutros)"
+    },
+    "trabajo": {
+      "job_id": "2c12b789-4f17-49ab-9ae6-2ac32fe479b8",
+      "status": "DONE",
+      "query": "Buscá los comentarios sobre el checkout, analizá el sentimiento, calculá el rating promedio y publicá el reporte en el canal del equipo.",
+      "requiere_aprobacion": true,
+      "created_at": "2026-10-22T03:57:54.302312+00:00",
+      "updated_at": "2026-10-22T03:58:12.441062+00:00",
+      "started_at": "2026-10-22T03:57:54.304867+00:00",
+      "finished_at": "2026-10-22T03:58:12.441040+00:00",
+      "duracion_s": 0.013,
+      "result": {
+        "respuesta": "**Reporte de Checkout**\n\n**Comentarios sobre el checkout:**\n\n* Algunos usuarios han tenido una experiencia positiva con el checkout, destacando su velocidad y facilidad de uso. Por ejemplo, un investigador mencionó que el nuevo checkout es \"muy rápido\" y que le encantó la experiencia.\n* Sin embargo, otros usuarios han expresado frustración con el proceso de pago, mencionando que tarda demasiado en cargar. Un usuario también mencionó que el botón de confirmar es \"confuso\".\n\n**Conclusión:** El checkout parece ser un aspecto crítico del proceso de compra, y es importante abordar las preocupaciones de los usuarios para mejorar la experiencia general. Se recomienda investigar y mejorar el proceso de pago para reducir los tiempos de carga y hacer que el botón de confirmar sea más intuitivo.\n\n**Recomendaciones:**\n\n* Investigar y mejorar el proceso de pago para reducir los tiempos de carga.\n* Mejorar el botón de confirmar para hacerlo más intuitivo y fácil de usar.\n\n---\n**Datos verificados (calculados por las herramientas, no por el LLM):**\n- Rating promedio: 3.2 (5 comentarios; mín. 1.0, máx. 5.0)\n- Sentimiento: mixto (2 positivos, 2 negativos, 1 neutros)",
+        "contribuciones": {
+          "investigador": "El nuevo checkout es mucho más rápido, me encantó la experiencia. (5/5)\n\nTarda demasiado en cargar el paso de pago, es frustrante. (2/5)\n\nBuena experiencia en general, aunque el botón de confirmar es confuso. (3/5)\n\nExcelente, el proceso de compra quedó buenísimo, lo recomiendo. (5/5)\n\nTuve un error al confirmar la compra, muy mala experiencia. (1/5)",
+          "analista": "La respuesta final es:\n\nEl rating promedio es de 3.2 y el sentimiento general es mixto, con 2 comentarios positivos, 2 negativos y 1 neutral."
+        },
+        "fuentes": [],
+        "datos_verificados": {
+          "temas_de_comentarios": [
+            "checkout"
+          ],
+          "cantidad_comentarios": 5,
+          "busquedas_en_documentos": [],
+          "sentimiento": {
+            "positivos": 2,
+            "negativos": 2,
+            "neutros": 1,
+            "sentimiento_general": "mixto"
+          },
+          "estadisticas": {
+            "promedio": 3.2,
+            "minimo": 1.0,
+            "maximo": 5.0,
+            "cantidad": 5
+          }
+        },
+        "pasos_supervisor": 3,
+        "publicacion": {
+          "publicado": true,
+          "canal": "#reportes-producto",
+          "fecha": "2026-10-22T03:58:12.435587+00:00",
+          "comentario": "Reporte revisado, OK para publicar."
+        },
+        "traza": [
+          {
+            "agente": "usuario",
+            "contenido": "Buscá los comentarios sobre el checkout, analizá el sentimiento, calculá el rating promedio y publicá el reporte en el canal del equipo."
+          },
+          {
+            "agente": "supervisor",
+            "contenido": "Delego en 'investigador'. Motivo: sin detalle"
+          },
+          {
+            "agente": "investigador",
+            "contenido": "El nuevo checkout es mucho más rápido, me encantó la experiencia. (5/5)\n\nTarda demasiado en cargar el paso de pago, es frustrante. (2/5)\n\nBuena experiencia en general, aunque el botón de confirmar es confuso. (3/5)\n\nExcelente, el proceso de compra quedó buenísimo, lo recomiendo. (5/5)\n\nTuve un error al confirmar la compra, muy mala experiencia. (1/5)"
+          },
+          {
+            "agente": "supervisor",
+            "contenido": "Delego en 'analista'. Motivo: el analista solo actúa si la solicitud pide análisis o cálculos"
+          },
+          {
+            "agente": "analista",
+            "contenido": "La respuesta final es:\n\nEl rating promedio es de 3.2 y el sentimiento general es mixto, con 2 comentarios positivos, 2 negativos y 1 neutral."
+          },
+          {
+            "agente": "supervisor",
+            "contenido": "**Reporte de Checkout**\n\n**Comentarios sobre el checkout:**\n\n* Algunos usuarios han tenido una experiencia positiva con el checkout, destacando su velocidad y facilidad de uso. Por ejemplo, un investigador mencionó que el nuevo checkout es \"muy rápido\" y que le encantó la experiencia.\n* Sin embargo, otros usuarios han expresado frustración con el proceso de pago, mencionando que tarda demasiado en cargar. Un usuario también mencionó que el botón de confirmar es \"confuso\".\n\n**Conclusión:** El checkout parece ser un aspecto crítico del proceso de compra, y es importante abordar las preocupaciones de los usuarios para mejorar la experiencia general. Se recomienda investigar y mejorar el proceso de pago para reducir los tiempos de carga y hacer que el botón de confirmar sea más intuitivo.\n\n**Recomendaciones:**\n\n* Investigar y mejorar el proceso de pago para reducir los tiempos de carga.\n* Mejorar el botón de confirmar para hacerlo más intuitivo y fácil de usar.\n\n---\n**Datos verificados (calculados por las herramientas, no por el LLM):**\n- Rating promedio: 3.2 (5 comentarios; mín. 1.0, máx. 5.0)\n- Sentimiento: mixto (2 positivos, 2 negativos, 1 neutros)"
+          },
+          {
+            "agente": "aprobacion_humana",
+            "contenido": "Reporte aprobado y publicado en #reportes-producto."
+          }
+        ]
+      },
+      "interrupt": {
+        "accion": "publicar_reporte",
+        "canal": "#reportes-producto",
+        "motivo": "Publicar el reporte tiene efectos secundarios: requiere aprobación humana.",
+        "reporte": "**Reporte de Checkout**\n\n**Comentarios sobre el checkout:**\n\n* Algunos usuarios han tenido una experiencia positiva con el checkout, destacando su velocidad y facilidad de uso. Por ejemplo, un investigador mencionó que el nuevo checkout es \"muy rápido\" y que le encantó la experiencia.\n* Sin embargo, otros usuarios han expresado frustración con el proceso de pago, mencionando que tarda demasiado en cargar. Un usuario también mencionó que el botón de confirmar es \"confuso\".\n\n**Conclusión:** El checkout parece ser un aspecto crítico del proceso de compra, y es importante abordar las preocupaciones de los usuarios para mejorar la experiencia general. Se recomienda investigar y mejorar el proceso de pago para reducir los tiempos de carga y hacer que el botón de confirmar sea más intuitivo.\n\n**Recomendaciones:**\n\n* Investigar y mejorar el proceso de pago para reducir los tiempos de carga.\n* Mejorar el botón de confirmar para hacerlo más intuitivo y fácil de usar.\n\n---\n**Datos verificados (calculados por las herramientas, no por el LLM):**\n- Rating promedio: 3.2 (5 comentarios; mín. 1.0, máx. 5.0)\n- Sentimiento: mixto (2 positivos, 2 negativos, 1 neutros)"
+      }
+    }
+  },
+  {
+    "id": 6,
+    "nombre": "Tarea crítica rechazada (HITL)",
+    "query": "Buscá los comentarios sobre el onboarding, analizá el sentimiento y compartí el reporte con el equipo.",
+    "espera": "Se pausa en WAITING_APPROVAL; tras el rechazo humano, NO se publica.",
+    "decision": {
+      "aprobado": false,
+      "comentario": "Todavía faltan datos de otras features."
+    },
+    "job_id": "8a461662-99b8-4f05-8a78-7de67312b1bc",
+    "estado": "DONE",
+    "duracion_s": 34.2,
+    "pausa": {
+      "accion": "publicar_reporte",
+      "canal": "#reportes-producto",
+      "motivo": "Publicar el reporte tiene efectos secundarios: requiere aprobación humana.",
+      "reporte": "**Reporte de Comentarios sobre Onboarding**\n\nDespués de analizar los comentarios sobre el onboarding, se pueden resumir los siguientes puntos:\n\n**Comentarios Positivos**\n\n* Algunos usuarios han encontrado el tutorial inicial claro y rápido, lo que les ha permitido avanzar con confianza.\n* Aunque algunos usuarios han encontrado el proceso un poco largo, la mayoría han considerado que es una buena primera impresión.\n\n**Comentarios Negativos**\n\n* Algunos usuarios se han perdido en el paso 3 del tutorial, lo que ha generado confusión y frustración.\n\n**Sentimiento General**\n\nEl sentimiento general de los comentarios es positivo, aunque con algunas reservas. La mayoría de los usuarios han encontrado el onboarding bien estructurado y fácil de seguir, aunque algunos han encontrado algunos pasos un poco confusos.\n\n**Recomendaciones**\n\nBasado en los comentarios, se recomienda:\n\n* Asegurarse de que el tutorial inicial sea claro y conciso, y que los pasos sean fáciles de seguir.\n* Considerar la posibilidad de agregar más ejemplos y ejercicios prácticos para ayudar a los usuarios a entender mejor el proceso.\n* Asegurarse de que los pasos sean testeados y validados antes de ser lanzados a producción.\n\n---\n**Datos verificados (calculados por las herramientas, no por el LLM):**\n- Rating promedio: 3.33 (3 comentarios; mín. 2.0, máx. 5.0)\n- Sentimiento: positivo (2 positivos, 1 negativos, 0 neutros)"
+    },
+    "trabajo": {
+      "job_id": "8a461662-99b8-4f05-8a78-7de67312b1bc",
+      "status": "DONE",
+      "query": "Buscá los comentarios sobre el onboarding, analizá el sentimiento y compartí el reporte con el equipo.",
+      "requiere_aprobacion": true,
+      "created_at": "2026-10-22T03:58:13.478216+00:00",
+      "updated_at": "2026-10-22T03:58:44.546456+00:00",
+      "started_at": "2026-10-22T03:58:13.481883+00:00",
+      "finished_at": "2026-10-22T03:58:44.546405+00:00",
+      "duracion_s": 0.016,
+      "result": {
+        "respuesta": "**Reporte de Comentarios sobre Onboarding**\n\nDespués de analizar los comentarios sobre el onboarding, se pueden resumir los siguientes puntos:\n\n**Comentarios Positivos**\n\n* Algunos usuarios han encontrado el tutorial inicial claro y rápido, lo que les ha permitido avanzar con confianza.\n* Aunque algunos usuarios han encontrado el proceso un poco largo, la mayoría han considerado que es una buena primera impresión.\n\n**Comentarios Negativos**\n\n* Algunos usuarios se han perdido en el paso 3 del tutorial, lo que ha generado confusión y frustración.\n\n**Sentimiento General**\n\nEl sentimiento general de los comentarios es positivo, aunque con algunas reservas. La mayoría de los usuarios han encontrado el onboarding bien estructurado y fácil de seguir, aunque algunos han encontrado algunos pasos un poco confusos.\n\n**Recomendaciones**\n\nBasado en los comentarios, se recomienda:\n\n* Asegurarse de que el tutorial inicial sea claro y conciso, y que los pasos sean fáciles de seguir.\n* Considerar la posibilidad de agregar más ejemplos y ejercicios prácticos para ayudar a los usuarios a entender mejor el proceso.\n* Asegurarse de que los pasos sean testeados y validados antes de ser lanzados a producción.\n\n---\n**Datos verificados (calculados por las herramientas, no por el LLM):**\n- Rating promedio: 3.33 (3 comentarios; mín. 2.0, máx. 5.0)\n- Sentimiento: positivo (2 positivos, 1 negativos, 0 neutros)",
+        "contribuciones": {
+          "investigador": "**Resumen de Comentarios sobre Onboarding**\n\nLos comentarios sobre el onboarding son mixtos, con algunas opiniones positivas y otras negativas.\n\n**Comentarios Positivos**\n\n* \"El tutorial inicial es claro y rápido, muy bien explicado.\" (5/5)\n* \"Buena primera impresión, aunque es un poco largo.\" (3/5)\n\n**Comentarios Negativos**\n\n* \"Me perdí en el paso 3, la explicación es confusa.\" (2/5)\n\n**Análisis Sentimental**\n\nEl análisis sentimental de los comentarios muestra una tendencia generalmente positiva, con un promedio de 3,2/5. Sin embargo, es importante destacar que la mayoría de los comentarios son neutrales o positivos, lo que sugiere que el onboarding es generalmente bien recibido.\n\n**Recuperadores**\n\nNo hay recuperadores mencionados en los comentarios.\n\n**Fuentes**\n\nLos comentarios provienen de la documentación técnica y de usuarios.",
+          "analista": "El sentimiento general de los comentarios es positivo, ya que hay 2 comentarios que expresan una opinión positiva y solo 1 comentario que expresa una opinión negativa. El promedio de los ratings es de 3.33, lo que indica que la mayoría de los usuarios han tenido una experiencia positiva con el onboarding."
+        },
+        "fuentes": [],
+        "datos_verificados": {
+          "temas_de_comentarios": [
+            "onboarding"
+          ],
+          "cantidad_comentarios": 3,
+          "busquedas_en_documentos": [
+            "onboarding"
+          ],
+          "sentimiento": {
+            "positivos": 2,
+            "negativos": 1,
+            "neutros": 0,
+            "sentimiento_general": "positivo"
+          },
+          "estadisticas": {
+            "promedio": 3.33,
+            "minimo": 2.0,
+            "maximo": 5.0,
+            "cantidad": 3
+          }
+        },
+        "pasos_supervisor": 3,
+        "publicacion": {
+          "publicado": false,
+          "comentario": "Todavía faltan datos de otras features."
+        },
+        "traza": [
+          {
+            "agente": "usuario",
+            "contenido": "Buscá los comentarios sobre el onboarding, analizá el sentimiento y compartí el reporte con el equipo."
+          },
+          {
+            "agente": "supervisor",
+            "contenido": "Delego en 'investigador'. Motivo: Corregido por la rúbrica: primero debe actuar 'investigador' (el LLM había elegido 'analista')."
+          },
+          {
+            "agente": "investigador",
+            "contenido": "**Resumen de Comentarios sobre Onboarding**\n\nLos comentarios sobre el onboarding son mixtos, con algunas opiniones positivas y otras negativas.\n\n**Comentarios Positivos**\n\n* \"El tutorial inicial es claro y rápido, muy bien explicado.\" (5/5)\n* \"Buena primera impresión, aunque es un poco largo.\" (3/5)\n\n**Comentarios Negativos**\n\n* \"Me perdí en el paso 3, la explicación es confusa.\" (2/5)\n\n**Análisis Sentimental**\n\nEl análisis sentimental de los comentarios muestra una tendencia generalmente positiva, con un promedio de 3,2/5. Sin embargo, es importante destacar que la mayoría de los comentarios son neutrales o positivos, lo que sugiere que el onboarding es generalmente bien recibido.\n\n**Recuperadores**\n\nNo hay recuperadores mencionados en los comentarios.\n\n**Fuentes**\n\nLos comentarios provienen de la documentación técnica y de usuarios."
+          },
+          {
+            "agente": "supervisor",
+            "contenido": "Delego en 'analista'. Motivo: Corregido por la rúbrica: primero debe actuar 'analista' (el LLM había elegido 'investigador')."
+          },
+          {
+            "agente": "analista",
+            "contenido": "El sentimiento general de los comentarios es positivo, ya que hay 2 comentarios que expresan una opinión positiva y solo 1 comentario que expresa una opinión negativa. El promedio de los ratings es de 3.33, lo que indica que la mayoría de los usuarios han tenido una experiencia positiva con el onboarding."
+          },
+          {
+            "agente": "supervisor",
+            "contenido": "**Reporte de Comentarios sobre Onboarding**\n\nDespués de analizar los comentarios sobre el onboarding, se pueden resumir los siguientes puntos:\n\n**Comentarios Positivos**\n\n* Algunos usuarios han encontrado el tutorial inicial claro y rápido, lo que les ha permitido avanzar con confianza.\n* Aunque algunos usuarios han encontrado el proceso un poco largo, la mayoría han considerado que es una buena primera impresión.\n\n**Comentarios Negativos**\n\n* Algunos usuarios se han perdido en el paso 3 del tutorial, lo que ha generado confusión y frustración.\n\n**Sentimiento General**\n\nEl sentimiento general de los comentarios es positivo, aunque con algunas reservas. La mayoría de los usuarios han encontrado el onboarding bien estructurado y fácil de seguir, aunque algunos han encontrado algunos pasos un poco confusos.\n\n**Recomendaciones**\n\nBasado en los comentarios, se recomienda:\n\n* Asegurarse de que el tutorial inicial sea claro y conciso, y que los pasos sean fáciles de seguir.\n* Considerar la posibilidad de agregar más ejemplos y ejercicios prácticos para ayudar a los usuarios a entender mejor el proceso.\n* Asegurarse de que los pasos sean testeados y validados antes de ser lanzados a producción.\n\n---\n**Datos verificados (calculados por las herramientas, no por el LLM):**\n- Rating promedio: 3.33 (3 comentarios; mín. 2.0, máx. 5.0)\n- Sentimiento: positivo (2 positivos, 1 negativos, 0 neutros)"
+          },
+          {
+            "agente": "aprobacion_humana",
+            "contenido": "Publicación RECHAZADA por el revisor humano. Comentario: Todavía faltan datos de otras features."
+          }
+        ]
+      },
+      "interrupt": {
+        "accion": "publicar_reporte",
+        "canal": "#reportes-producto",
+        "motivo": "Publicar el reporte tiene efectos secundarios: requiere aprobación humana.",
+        "reporte": "**Reporte de Comentarios sobre Onboarding**\n\nDespués de analizar los comentarios sobre el onboarding, se pueden resumir los siguientes puntos:\n\n**Comentarios Positivos**\n\n* Algunos usuarios han encontrado el tutorial inicial claro y rápido, lo que les ha permitido avanzar con confianza.\n* Aunque algunos usuarios han encontrado el proceso un poco largo, la mayoría han considerado que es una buena primera impresión.\n\n**Comentarios Negativos**\n\n* Algunos usuarios se han perdido en el paso 3 del tutorial, lo que ha generado confusión y frustración.\n\n**Sentimiento General**\n\nEl sentimiento general de los comentarios es positivo, aunque con algunas reservas. La mayoría de los usuarios han encontrado el onboarding bien estructurado y fácil de seguir, aunque algunos han encontrado algunos pasos un poco confusos.\n\n**Recomendaciones**\n\nBasado en los comentarios, se recomienda:\n\n* Asegurarse de que el tutorial inicial sea claro y conciso, y que los pasos sean fáciles de seguir.\n* Considerar la posibilidad de agregar más ejemplos y ejercicios prácticos para ayudar a los usuarios a entender mejor el proceso.\n* Asegurarse de que los pasos sean testeados y validados antes de ser lanzados a producción.\n\n---\n**Datos verificados (calculados por las herramientas, no por el LLM):**\n- Rating promedio: 3.33 (3 comentarios; mín. 2.0, máx. 5.0)\n- Sentimiento: positivo (2 positivos, 1 negativos, 0 neutros)"
+      }
+    }
+  }
+]

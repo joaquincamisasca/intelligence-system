@@ -1,0 +1,22 @@
+[
+  {
+    "pregunta": "¿Qué framework se usa para los endpoints REST y por qué se eligió?",
+    "documento_id_esperado": "01_arquitectura.md"
+  },
+  {
+    "pregunta": "¿Cómo se gestionan los secretos y credenciales de la empresa?",
+    "documento_id_esperado": "02_seguridad.md"
+  },
+  {
+    "pregunta": "¿Qué herramienta se usa para levantar bases de datos efímeras durante los tests de integración?",
+    "documento_id_esperado": "03_testing.md"
+  },
+  {
+    "pregunta": "¿Qué estrategia de despliegue se usa para los servicios críticos de cara al usuario?",
+    "documento_id_esperado": "04_deployment.md"
+  },
+  {
+    "pregunta": "¿Qué porcentaje mínimo de cobertura de tests se exige antes de mergear un pull request?",
+    "documento_id_esperado": "03_testing.md"
+  }
+]

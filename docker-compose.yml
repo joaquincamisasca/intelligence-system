@@ -1,0 +1,91 @@
+# TODO el sistema con UN comando:
+#
+#     docker compose up --build
+#
+# Levanta: la API (FastAPI + workers + RAG + grafo de agentes), Redis Stack
+# (cola, estado de trabajos y checkpoints de LangGraph) y Arize Phoenix
+# (trazas). El LLM corre en Ollama en TU máquina (ver README) o en el
+# contenedor opcional de abajo (`--profile ollama`).
+#
+#   API + documentación interactiva:  http://localhost:8000/docs
+#   Phoenix (trazas):                 http://localhost:6006
+
+services:
+  api:
+    build: .
+    container_name: intelligence-api
+    ports:
+      - "8000:8000"
+    # Variables del archivo .env (opcional: si no existe, se usan los defaults de abajo).
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      # Dentro de la red de Docker, los otros servicios se llaman por su nombre.
+      REDIS_URL: redis://redis:6379
+      PHOENIX_COLLECTOR_ENDPOINT: http://phoenix:6006/v1/traces
+      # Ollama corriendo en tu compu (Windows/Mac). Para el contenedor opcional:
+      # OLLAMA_BASE_URL=http://ollama:11434 en tu .env.
+      OLLAMA_BASE_URL: ${OLLAMA_BASE_URL:-http://host.docker.internal:11434}
+      CHROMA_PATH: /app/storage/chroma
+      SQLITE_PATH: /app/storage/checkpoints.sqlite
+    extra_hosts:
+      - "host.docker.internal:host-gateway"   # necesario en Linux; en Windows/Mac ya existe
+    volumes:
+      - app_storage:/app/storage
+    depends_on:
+      redis:
+        condition: service_healthy
+      phoenix:
+        condition: service_started
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 40s
+
+  # Redis STACK (no el Redis común): el checkpointer de LangGraph usa los
+  # módulos RediSearch y RedisJSON, que Redis Stack ya trae.
+  redis:
+    image: redis/redis-stack-server:latest
+    container_name: intelligence-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 10
+
+  phoenix:
+    image: arizephoenix/phoenix:latest
+    container_name: intelligence-phoenix
+    ports:
+      - "6006:6006"   # UI + recepción de trazas (OTLP/HTTP)
+      - "4317:4317"   # OTLP/gRPC
+    environment:
+      PHOENIX_WORKING_DIR: /mnt/data
+    volumes:
+      - phoenix_data:/mnt/data
+
+  # OPCIONAL: Ollama dentro de Docker, para no instalarlo en tu máquina.
+  #   docker compose --profile ollama up --build
+  #   docker compose exec ollama ollama pull llama3.2
+  # y poné OLLAMA_BASE_URL=http://ollama:11434 en tu .env
+  ollama:
+    image: ollama/ollama:latest
+    container_name: intelligence-ollama
+    profiles: ["ollama"]
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+
+volumes:
+  app_storage:
+  redis_data:
+  phoenix_data:
+  ollama_data:

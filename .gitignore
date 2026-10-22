@@ -1,0 +1,17 @@
+# Secretos: NUNCA se suben
+.env
+
+# Entorno y cachés
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Datos generados en tiempo de ejecución (base vectorial, checkpoints)
+storage/*
+!storage/.gitkeep
+
+# IDE
+.vscode/
+.idea/

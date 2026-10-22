@@ -1,0 +1,42 @@
+# Python 3.12+  (declarado también en pyproject.toml y en el Dockerfile)
+
+# --- API ---
+fastapi>=0.115
+uvicorn[standard]>=0.30
+pydantic>=2.7,<3.0
+pydantic-settings>=2.4
+python-dotenv>=1.0
+httpx>=0.27
+
+# --- Estado, cola y checkpoints ---
+redis>=5.0
+# Checkpointer de LangGraph sobre Redis (requiere Redis Stack: RediSearch + RedisJSON)
+langgraph-checkpoint-redis>=0.5,<0.6
+# Respaldo persistente si Redis no tiene los módulos de Stack
+langgraph-checkpoint-sqlite>=2.0
+aiosqlite>=0.20
+
+# --- Orquestador multi-agente ---
+langgraph>=1.0,<2.0
+langchain>=1.0,<2.0
+langchain-core>=1.0,<2.0
+langchain-text-splitters>=0.3
+langchain-ollama>=1.0,<2.0
+langchain-openai>=1.0,<2.0
+langchain-anthropic>=1.0,<2.0
+
+# --- RAG: base vectorial, embeddings, búsqueda léxica, chunking ---
+chromadb>=1.0
+pinecone>=5.4.2
+fastembed>=0.4.2
+rank-bm25>=0.2.2
+tiktoken>=0.8.0
+
+# --- Observabilidad (Arize Phoenix vía OpenInference) ---
+arize-phoenix-otel>=0.17
+openinference-instrumentation-langchain>=0.1.70
+
+# --- Tests (no necesitan Redis, Phoenix, Ollama ni internet) ---
+pytest>=8.0
+pytest-asyncio>=0.24
+fakeredis>=2.26

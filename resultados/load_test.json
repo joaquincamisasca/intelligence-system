@@ -1,0 +1,56 @@
+{
+  "fecha": "2026-10-22T01:01:38",
+  "url": "http://localhost:8000",
+  "peticiones": 5,
+  "completadas": 5,
+  "latencia_post_max_ms": 101.4,
+  "latencia_p50_s": 111.01,
+  "latencia_p95_s": 123.71,
+  "trabajos": [
+    {
+      "job_id": "3a5c6c37-f66b-4ba8-b2de-1be76460d43a",
+      "status": "DONE",
+      "requiere_aprobacion": false,
+      "consulta": "Buscá los comentarios sobre el checkout, analizá el sentimiento y calculá el rating promedio.",
+      "latencia_post_s": 0.10137199999962831,
+      "latencia_total_s": 111.0079467999999,
+      "error": null
+    },
+    {
+      "job_id": "b7736236-98c6-4084-bfa8-61cedfcb53ff",
+      "status": "DONE",
+      "requiere_aprobacion": false,
+      "consulta": "Según la documentación, ¿qué estrategia de despliegue se usa para los servicios críticos de cara al usuario?",
+      "latencia_post_s": 0.02911069999981919,
+      "latencia_total_s": 85.52457179999965,
+      "error": null
+    },
+    {
+      "job_id": "4f289aa3-2583-4d6d-b5b3-c776c5494040",
+      "status": "DONE",
+      "requiere_aprobacion": false,
+      "consulta": "¿Qué opinan los usuarios del onboarding? Analizá el sentimiento y el rating promedio.",
+      "latencia_post_s": 0.039114299999710056,
+      "latencia_total_s": 119.03185799999983,
+      "error": null
+    },
+    {
+      "job_id": "dfe94434-7c0e-4bc4-9941-20951902e24b",
+      "status": "DONE",
+      "requiere_aprobacion": false,
+      "consulta": "Según la documentación, ¿cómo se gestionan los secretos y credenciales de la empresa?",
+      "latencia_post_s": 0.03639820000034888,
+      "latencia_total_s": 90.66623180000033,
+      "error": null
+    },
+    {
+      "job_id": "b1a801a4-9201-4577-a8ba-64f4f207e575",
+      "status": "DONE",
+      "requiere_aprobacion": false,
+      "consulta": "Qué cobertura mínima de tests exige la documentación, y analizá el sentimiento de los comentarios del checkout.",
+      "latencia_post_s": 0.04508509999959642,
+      "latencia_total_s": 123.71012109999992,
+      "error": null
+    }
+  ]
+}
